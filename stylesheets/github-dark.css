@@ -1,124 +1,275 @@
-/*
-The MIT License (MIT)
+@charset "UTF-8";
 
-Copyright (c) 2016 GitHub, Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-*/
-
-.pl-c /* comment */ {
-  color: #969896;
+.sidebar, .sidebar a, aside a {
+	color: #fff
 }
 
-.pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
-.pl-s .pl-v /* string variable */ {
-  color: #0099cd;
+.qr, .title {
+	text-align: center
 }
 
-.pl-e /* entity */,
-.pl-en /* entity.name */ {
-  color: #9774cb;
+* {
+	margin: 0;
+	padding: 0
 }
 
-.pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.pl-s .pl-s1 /* string source */ {
-  color: #ddd;
+body {
+	background: #e0e0e0;
+	font-family: 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial,
+		'Hiragino Sans GB', 微软雅黑, 'WenQuanYi Micro Hei', STHeiti, SimSun,
+		sans-serif
 }
 
-.pl-ent /* entity.name.tag */ {
-  color: #7bcc72;
+.sidebar, aside li {
+	background: #00bfa5
 }
 
-.pl-k /* keyword, storage, storage.type */ {
-  color: #cc2372;
+li, ul {
+	list-style: none
 }
 
-.pl-s /* string */,
-.pl-pds /* punctuation.definition.string, string.regexp.character-class */,
-.pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
-.pl-sr /* string.regexp */,
-.pl-sr .pl-cce /* string.regexp constant.character.escape */,
-.pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
-.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #3c66e2;
+a {
+	text-decoration: none
 }
 
-.pl-v /* variable */ {
-  color: #fb8764;
+aside {
+	position: fixed;
+	right: 0;
+	top: 30%
 }
 
-.pl-id /* invalid.deprecated */ {
-  color: #e63525;
+aside li {
+	margin-bottom: 10px;
+	padding: 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px
 }
 
-.pl-ii /* invalid.illegal */ {
-  color: #f8f8f8;
-  background-color: #e63525;
+.container {
+	width: 1260px;
+	position: relative
 }
 
-.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #7bcc72;
+.sidebar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 450px;
+	padding: 25px;
+	line-height: 1.5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
-.pl-ml /* markup.list */ {
-  color: #c26b2b;
+.skill, .skill-name {
+	position: relative
 }
 
-.pl-mh /* markup.heading */,
-.pl-mh .pl-en /* markup.heading entity.name */,
-.pl-ms /* meta.separator */ {
-  font-weight: bold;
-  color: #264ec5;
+.title {
+	margin: 25px 0 20px
 }
 
-.pl-mq /* markup.quote */ {
-  color: #00acac;
+.title img {
+	display: block;
+	margin: 0 auto 15px;
+	width: 150px
 }
 
-.pl-mi /* markup.italic */ {
-  font-style: italic;
-  color: #ddd;
+h1 {
+	font-size: 36px;
+	font-weight: 400
 }
 
-.pl-mb /* markup.bold */ {
-  font-weight: bold;
-  color: #ddd;
+h2 {
+	font-size: 16px
 }
 
-.pl-md /* markup.deleted, meta.diff.header.from-file */ {
-  color: #bd2c00;
-  background-color: #ffecec;
+.side-info li {
+	padding-top: 20px
 }
 
-.pl-mi1 /* markup.inserted, meta.diff.header.to-file */ {
-  color: #55a532;
-  background-color: #eaffea;
+.side-info h5 {
+	font-size: 20px;
+	color: #9f3;
+	line-height: 40px
 }
 
-.pl-mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #9774cb;
+.side-info h6 {
+	font-size: 16px;
+	line-height: 25px
 }
 
-.pl-mo /* meta.output */ {
-  color: #264ec5;
+.someRight h6 {
+	margin-left: 25px
 }
 
+.skill-name {
+	width: 100px;
+	font-size: 14px;
+	display: inline-block;
+	left: 25px;
+	top: -3px
+}
+
+.note, .qr {
+	font-size: 20px;
+	color: #004d40
+}
+
+.skill-bar-wrap {
+	height: 17px;
+	width: 150px;
+	background: #00796b;
+	display: inline-block;
+	-webkit-border-radius: 20px;
+	border-radius: 20px
+}
+
+.skill-bar {
+	height: 17px;
+	background: #fff;
+	-webkit-border-radius: 20px 0 0 20px;
+	border-radius: 20px 0 0 20px
+}
+
+.note {
+	text-indent: 2em;
+	margin-top: 100px
+}
+
+.qr {
+	position: absolute;
+	bottom: 40px;
+	width: 400px
+}
+
+.main, h4 {
+	position: relative
+}
+
+.qr-in {
+	margin: 0 auto
+}
+
+.qr-in img {
+	width: 200px
+}
+
+.qr-in a {
+	color: #004d40
+}
+
+.main {
+	left: 450px;
+	width: 899px;
+	padding: 15px 20px 0;
+	background: #f0f2f1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.main a {
+	color: #4db6ac
+}
+
+.main-info>li {
+	padding-top: 10px
+}
+
+.main-info h5 {
+	font-size: 26px;
+	color: #00796b;
+	line-height: 30px;
+	border-bottom: 1px solid #00796b;
+	margin: 0 0 15px -5px
+}
+
+.main-info h6 {
+	font-size: 17px;
+	line-height: 27px;
+	color: #616161
+}
+
+h4, h5 {
+	color: #000
+}
+
+.main-info span {
+	color: #000;
+	font-size: 18px
+}
+
+h3, h4 {
+	font-size: 20px
+}
+
+h3 {
+	color: #004d40;
+	margin: 0 0 15px 5px
+}
+
+h4 {
+	line-height: 30px;
+	bottom: 3px
+}
+
+h4 a, h5 a {
+	font-size: 14px
+}
+
+h5 {
+	clear: both;
+	font-size: 18px;
+	line-height: 25px
+}
+
+.circle {
+	height: 14px;
+	width: 14px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	background: #00796b;
+	float: left;
+	position: absolute;
+	left: -28px;
+	top: 5px
+}
+
+.exp {
+	border-left: 2px solid #00796b;
+	margin-left: 15px
+}
+
+.exp p {
+	font-size: 15px;
+	color: #616161;
+	line-height: 21px
+}
+
+.exp>li {
+	position: relative;
+	top: -5px;
+	margin: 0 0 8px 20px
+}
+
+.exp img {
+	width: 150px
+}
+
+.exp ul>li {
+	margin: 0 0 12px
+}
+
+.efe .task4img img {
+	height: 73px;
+	width: inherit
+}
+
+.pro_second_title {
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 25px;
+	color: #000;
+}
